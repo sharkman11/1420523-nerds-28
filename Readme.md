@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
-* Студент: [Michael Akulov](https://up.htmlacademy.ru/htmlcss/28/user/1420523).
-* Наставник: `Неизвестно`.
+* Студент: [Михаил Акулов](https://htmlacademy.ru/profile/sharkman_11).
+* Наставник: [Александр Панасюк](https://htmlacademy.ru/profile/sasha_oldsport).
 
 ---
 
