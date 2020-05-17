@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="catalog.html">Студия</a></li>
+          <li><a href="">Клиенты</a></li>
+          <li><a href="">Магазин</a></li>
+          <li><a href="">Контакты</a></li>
+        </ul>
+        <a href="">Корзина</a>
+      </nav>
+    </header>
+
+  <main>
+
+    <h1>Магазин готовых шаблонов</h1>
+
+    <section>
+     <h2>Сетка:</h2>
+      <!-- Здесь будет форма фильтра -->
+    </section>
+
+    <section>
+     <h2>Особенности:</h2>
+      <!-- Здесь будет форма фильтра -->
+    </section>
+
+
+
+  </main>
+
+
+      <ul>
+        <li>
+          <a href="#">Вконтакте</a>
+        </li>
+        <li>
+          <a href="#">Фейсбук</a>
+        </li>
+        <li>
+          <a href="#">Инстаграм</a>
+        </li>
+      </ul>
+
+    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+
+  </body>
+</html>
