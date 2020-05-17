@@ -20,6 +20,14 @@
   <main>
 
     <h1>Магазин готовых шаблонов</h1>
+     <div class="Gallery">
+      <img src="#">
+      <img src="#">
+      <img src="#">
+      <img src="#">
+      <img src="#">
+      <img src="#">
+    </div>
 
     <section>
      <h2>Сетка:</h2>
