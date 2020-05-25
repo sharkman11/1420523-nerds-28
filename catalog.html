@@ -36,19 +36,76 @@
   </section>
 
     <section>
-     <h2>Сетка:</h2>
-      <!-- Здесь будет форма фильтра -->
+
+     <fieldset>
+       <legend>Сетка</legend>
+       <ul>
+         <li>
+           <input type="radio" name="setting" value="Адаптивная" checked>
+             <label for="Адаптивная">Адаптиная</label>
+
+        </li>
+        <li>
+          <input type="radio" name="setting" value="Фиксированная">
+            <label for="Фиксированная">Фиксированная</label>
+        </li>
+        <li>
+          <input type="radio" name="setting" value="Резиновая">
+            <label for="Резиновая">Резиновая</label>
+        </li>
+      </ul>
+
+     </fieldset>
     </section>
 
     <section>
-     <h2>Особенности:</h2>
-      <!-- Здесь будет форма фильтра -->
+     <fieldset>
+       <legend>Особенности</legend>
+       <ul>
+         <li>
+          <input type="checkbox" name="Слайдер" id="Слайдер" checked>
+            <label for="Слайдер">Слайдер</label>
+        </li>
+        <li>
+          <input type="checkbox" name="Блок преймуществ" id="Блок преймуществ">
+            <label for="Блок преймуществ">Блок преймуществ</label>
+        </li>
+        <li>
+          <input type="checkbox" name="Новости" id="Новости" checked>
+            <label for="Новости">Новости</label>
+        </li>
+        <li>
+          <input type="checkbox" name="Галерея" id="Галерея">
+            <label for="Галерея">Галерея</label>
+        </li>
+        <li>
+          <input type="checkbox" name="Корзина" id="Корзина">
+            <label for="Корзина">Корзина</label>
+        </li>
+      </ul>
+
+     </fieldset>
+     <button type="submit">Показать</button>
+    </form>
     </section>
 
 
 
   </main>
 
+  <h3>Напишите нам</h3>
+  <form action="#" method="post">
+      <label for="name">Ваше имя: </label>
+    <br>
+        <input type="text" name="name" id="name">
+    <br>
+      <label for="login">Ваш e-mail: </label>
+    <br>
+        <input type="text" name="login" id="login">
+    <br>
+      <label for="info">Текст письма:</label>
+    <br>
+        <textarea rows="3" id="info" name="info"></textarea>
 
   <ul>
     <li>
@@ -60,6 +117,10 @@
     <li>
       <a href="#">Инстаграм <img src="img/insta-icon.svg"  width="21" height="21"></a>
     </li>
+
+       <h4>Давайте дружить,это выгодно!</h4>
+      <p>Скидка 10% для друзей из социальных сетей.</p>
+   
   </ul>
 </body>
 </html>
