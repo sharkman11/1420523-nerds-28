@@ -42,6 +42,7 @@ img {
 .main-navigation {
   font-size: 16px;
   line-height: 30px;
+  font-weight: medium;
   text-transform: uppercase;
   color: var(--text-black);
   background-color: var(--basic-white);
@@ -58,4 +59,45 @@ img {
   text-transform: uppercase;
   background-color: var(--basic-grey);
   border: none;
+}
+
+.h2 {
+  font: roboto;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.p {
+  font: roboto;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: regular;
+}
+
+.button-red{
+  font: roboto;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-white);
+  font-weight: medium;
+  background-color: var(--basic-red);
+}
+
+.button-green{
+  font: roboto;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-white);
+  font-weight: medium;
+  background-color: var(--basic-green);
+}
+
+.button-yellow{
+  font: roboto;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-white);
+  font-weight: medium;
+  background-color: var(--basic-yellow);
 }
