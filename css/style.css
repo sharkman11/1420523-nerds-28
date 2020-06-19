@@ -129,6 +129,10 @@ img {
   background-color: var(--basic-gray);
 }
 
+.inner-page .main-header {
+  min-height: 120px;
+}
+
 .main-menu {
   display: flex;
   flex-direction: row;
@@ -171,6 +175,35 @@ img {
   padding: 9px 0;
   padding-left: 36px;
   text-align: right;
+}
+
+
+/* Menu buttons */
+
+.main-menu a:not([href]):not(.main-menu-logo) {
+  padding-bottom: 13px;
+  border-bottom: 2px solid var(--basic-red);
+}
+
+.main-menu a:not(.menu-active):hover,
+.main-menu a:not(.menu-active):focus {
+  color: var(--basic-red);
+}
+
+.main-menu a:not(:active):focus {
+  outline: none;
+  box-shadow:
+    0 0 0 3px var(--basic-gray),
+    0 0 0 6px var(--basic-red);
+}
+
+.main-menu a:not(.menu-active):not(.main-menu-logo):active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.main-menu-logo:not(.menu-active):active svg {
+  fill: var(--basic-gray-icon);
 }
 
 
@@ -264,7 +297,15 @@ img {
 }
 
 .filters legend,
-
+.filter-sort h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
 
 .filter-gride legend,
 .filter-features legend {
@@ -304,8 +345,36 @@ img {
   margin-bottom: 30px;
   background-color: var(--basic-gray);
   overflow: hidden;
-
+  border: 1px solid var(--basic-gray-border);
+  border-radius: 5px;
 }
+
+.items .item:hover {
+  width: 360px;
+  height: 820px;
+  border: none;
+  box-shadow: 0px 6px 15px var(--basic-gray-shadow);
+}
+
+.item-image::before {
+  content: "";
+  display: block;
+  width: 360px;
+  height: 39px;
+  background-color: var(--basic-form-icon);
+  opacity: 0.12;
+}
+
+.item:hover .item-image::before {
+  height: 40px;
+  opacity: 1;
+}
+
+.item:hover img {
+  width: 360px;
+  height: auto;
+}
+
 
 .item-text {
   line-height: 18px;
@@ -328,6 +397,8 @@ img {
 /* Button */
 
 .button {
+  border: none;
+  border-radius: 3px;
   font: inherit;
   line-height: 18px;
   font-weight: medium;
@@ -337,22 +408,93 @@ img {
   color: var(--basic-white);
 }
 
+.button:active {
+  color: var(--basic-white-opacity);
+  box-shadow: inset 0px 3px 0px var(--basic-box-shadow);
+}
 
 .button-red {
   background-color: var(--basic-red);
 }
 
+.button-red:hover,
+.button-red:focus {
+  background-color: var(--basic-red-hover);
+}
+.button-red:focus {
+  outline: none;
+  box-shadow:
+    0 0 0 3px var(--basic-white),
+    0 0 0 6px var(--basic-red-hover);
+}
+.button-red:active {
+  background-color: var(--basic-red-active);
+  box-shadow: none;
+}
+
+
 .button-green {
   background-color: var(--basic-green);
 }
+
+.button-green:hover,
+.button-green:focus {
+  background-color: var(--basic-green-hover);
+}
+.button-green:focus {
+  outline: none;
+  box-shadow:
+    0 0 0 3px var(--basic-white),
+    0 0 0 6px var(--basic-green-hover);
+}
+.button-green:active {
+  background-color: var(--basic-green-active);
+  box-shadow: none;
+}
+
+
 
 .button-yellow {
   background-color: var(--basic-yellow);
 }
 
+.button-yellow:hover,
+.button-yellow:focus {
+  background-color: var(--basic-yellow-hover);
+}
+.button-yellow:focus {
+  outline: none;
+  box-shadow:
+    0 0 0 3px var(--basic-white),
+    0 0 0 6px var(--basic-yellow-hover);
+}
+.button-yellow:active {
+  background-color: var(--basic-yellow-active);
+  box-shadow: none;
+}
+
+
+
+
 .button-gray {
   color: var(--basic-black);
   background-color: var(--basic-gray);
+}
+
+.button-gray:hover,
+.button-gray:focus {
+  background-color: var(--basic-gray-hover);
+}
+.button-gray:focus {
+  outline: none;
+  box-shadow:
+    0 0 0 3px var(--basic-white),
+    0 0 0 6px var(--basic-red-hover);
+}
+.button-gray:active {
+  color: var(--basic-black-opacity);
+  background-color: var(--basic-gray-active);
+  box-shadow: none;
 }
 
 /* Main footer */
@@ -428,6 +570,23 @@ img {
   background-position: -209px -10px;
 }
 
+.social a:hover,
+.social a:focus {
+  background-color: var(--basic-red-hover);
+}
+.social a:focus {
+	outline: none;
+	box-shadow:
+		0 0 0 3px var(--basic-white),
+		0 0 0 6px var(--basic-red);
+}
+.social a:active {
+  box-shadow: inset 0px 3px 0px var(--basic-box-shadow);
+  background-color: var(--basic-red-active);
+}
+a:active .social-icon {
+  opacity: 0.3;
+}
 
 /* Feedback */
 
@@ -474,4 +633,18 @@ img {
 
 .feedback-form-area {
   width: 726px;
+}
+.feedback-form-area:hover {
+  border-color: var(--basic-form-hover);
+}
+
+.feedback-form-area:focus {
+  border-color: var(--basic-black);
+  outline: none;
+  color: var(--basic-form-value);
+}
+
+.feedback-form-area:invalid {
+  border-color: var(--basic-red-hover);
+  color: var(--basic-red-hover);
 }
