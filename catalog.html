@@ -33,7 +33,27 @@
         <section class="filters">
           <h2 class="visually-hidden">Фильтр товаров</h2>
           <form action="https://echo.htmlacademy.ru" method="get">
+            <fieldset class="filter-cost">
+                <legend>Стоимость:</legend>
+                <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar" style="width: 70%; margin-left: 0"></div>
+                    </div>
+                    <div class="toggle toggle-min" tabindex="0" style="left: 0"></div>
+                    <div class="toggle toggle-max" tabindex="0" style="left: 63%"></div>
+                  </div>
 
+                  <div class="price-controls">
+                    <label class="min-price">
+                      от <input type="number" name="min-price" step="100" value="0">
+                    </label>
+                    <label class="max-price">
+                      до <input type="number" name="max-price" step="100" value="15000">
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
 
             <fieldset class="filter-gride">
               <legend>Сетка:</legend>
@@ -83,6 +103,40 @@
           </form>
         </section>
 
+        <section class="filter-sort">
+          <h3>Сортировать:</h3>
+          <div class="filter-sort-list">
+            <ul class="sort-list-type">
+              <li>
+               <button type="button" class="sort sort-price sort-active">По цене</button>
+              </li>
+              <li>
+                <button type="button" class="sort sort-type">По типу</button>
+              </li>
+              <li>
+                <button type="button" class="sort sort-name">По названию</button>
+              </li>
+            </ul>
+            <ul class="sort-list-icons">
+              <li>
+                <button type="button" class="sort-icon icon-down-dir sort-icon-active">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                    <path d="M5.5 10L0 0h11"/>
+                  </svg>
+                  Сверху вниз
+                </button>
+              </li>
+              <li>
+                <button type="button" class="sort-icon icon-down-dir">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                    <path d="M5.5 0L0 10h11z"/>
+                  </svg>
+                    Снизу вверх
+                </button>
+              </li>
+            </ul>
+          </div>
+        </section>
 
         <section class="items">
           <h2 class="visually-hidden">Список товаров</h2>
@@ -153,15 +207,38 @@
               </div>
             </li>
           </ul>
-
+          <ul class="pagination-list">
+            <li><a class="button button-gray list-active">1</a></li>
+            <li><a href="#" class="button button-gray list-active">2</a></li>
+            <li><a href="#" class="button button-gray list-active">3</a></li>
+            <li><a href="#" class="button button-gray list-active">Следующая</a></li>
+          </ul>
         </section>
       </div>
     </main>
 
     <footer class="main-footer">
+      <section class="contacts">
+        <h2 class="visually-hidden container">Контактная информация</h2>
+        <div class="map-container">
+          <img class="map" src="img/map-with-marker.jpg" width="1440" height="416" alt="nёrd's на карте">
+        </div>
+        <div class="contacts-container container">
+          <div class="contacts-popup">
+            <p class="contacts-title"><strong>NЁRDS DESIGN STUDIO</strong></p>
+            <p class="contacts-address">
+              191186, Санкт-Петербург,<br>
+              ул. Б. Конюшенная, д. 19/8
+            </p>
+            <p class="contacts-phone">
+              тел. +7 (812) 275-75-75
+            </p>
+            <a href="feedback.html" class="button button-red">Напишите нам</a>
+          </div>
+        </div>
+      </section>
 
-
-      <section class="social container">
+     <section class="social container">
         <div class="social-text">
           <h2 class="visually-hidden">Социальные сети</h2>
           <p class="call-to-action"><strong>Давайте дружить, это выгодно!</strong></p>
