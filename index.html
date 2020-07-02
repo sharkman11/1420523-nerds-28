@@ -174,7 +174,8 @@
                   <p class="contacts-phone">
                     тел. +7 (812) 275-75-75
                   </p>
-                  <a href="feedback.html" class="button button-red wright-us">Напишите нам</a>
+                  <input type="checkbox" id="modal">
+                  <label class="button button-red wright-us" for="modal">Напишите нам </label>
                 </div>
               </div>
             </section>
@@ -206,26 +207,12 @@
           </li>
         </ul>
       </section>
+
+
+
     </footer>
 
-    <section class="feedback">
-      <h2>Напишите нам</h2>
-      <form class="feedback-form" name="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label for="feedback-form-name">Ваше имя:</label><br>
-          <input id="feedback-form-name" class="feedback-form-name" type="text" name="name" placeholder="Имя Фамилия">
-        </p>
-        <p>
-          <label for="feedback-form-email">Ваш email:</label><br>
-          <input id="feedback-form-email" class="feedback-form-email" type="email" name="email" placeholder="email@example.com">
-        </p>
-        <p>
-          <label for="feedback-form-message">Текст письма:</label><br>
-          <textarea id="feedback-form-message" class="feedback-form-area" name="message" rows="4" required>В свободной форме</textarea>
-        </p>
-        <button type="submit" class="button button-red button-send">Отправить</button>
-      </form>
-    </section>
+
 
   </body>
 </html>
