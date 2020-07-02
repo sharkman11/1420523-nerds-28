@@ -485,7 +485,7 @@ img {
 /* Companies */
 
 .companies {
-  padding-bottom: 80px;
+  padding-bottom: 54px;
 }
 
 .companies-list {
@@ -782,11 +782,9 @@ img {
   margin-top: 40px;
   margin-right: 40px;
   margin-bottom: 31px;
-
-  border: 1px solid var(--basic-black-border);
-  border-radius: 0 0 5px 5px;
-  box-sizing: border-box;
+  cursor: pointer;
 }
+
 
 .catalog-img {
 	width: 358px;
@@ -854,14 +852,14 @@ img {
 .catalog-item:hover {
 	width: 360px;
 	height: 580px;
-
 	border-color: transparent;
-	box-shadow: 0 6px 15px 0 var(--basic-gray-shadow);
+	box-shadow: 0 6px 15px 0 var(--basic-gray);
 }
 
 .catalog-item:hover .catalog-price {
 	display: block;
 }
+
 
 .catalog-name {
 	margin: 0;
@@ -881,11 +879,11 @@ img {
 
 
 .catalog-name a:hover {
-	color: var(--basic-pink);
+	color: var(--basic-red);
 }
 
 .catalog-name a:active {
-	color: var(--basic-transp-black);
+	color: var(--basic-black);
 }
 
 .catalog-price p {
@@ -894,8 +892,10 @@ img {
 
 	line-height: 18px;
 	text-align: center;
-	color: var(--basic-silver);
+	color: var(--basic-black);
 }
+
+
 
 .button-price {
 	width: 200px;
@@ -905,8 +905,8 @@ img {
   background-color: var(--basic-red);
   width: 200px;
   height: 50px;
-
 }
+
 
 /* Shop */
 
