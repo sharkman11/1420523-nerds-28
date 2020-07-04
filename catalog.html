@@ -55,49 +55,48 @@
                 </div>
               </fieldset>
 
-              <fieldset class="filter-item filter-item-2">
-                    <legend>Сетка:</legend>
-                    <ul class="filter-option filter-radio">
-                      <li>
-                        <input class="visually-hidden-2 filter-input-radio filter-input" type="radio" name="product-group" value="adaptability" id="adaptability" checked="">
-                        <label for="adaptability">Адаптивная</label>
-                      </li>
-                      <li>
-                        <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-group" value="fixed" id="fixed">
-                        <label for="fixed">Фиксированная</label>
-                      </li>
-                      <li>
-                        <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-group" value="rubber" id="rubber">
-                        <label for="rubber">Резиновая</label>
-                      </li>
-                    </ul>
-                  </fieldset>
-                  <!-- /.filter-item -->
-                  <fieldset class="filter-item filter-item-3">
-                    <legend>Особенности:</legend>
-                    <ul class="filter-option filter-checkbox">
-                      <li>
-                        <input class="visually-hidden-2 filter-input-checkbox filter-input" type="checkbox" name="slider" id="slider" checked="">
-                        <label for="slider">Слайдер</label>
-                      </li>
-                      <li>
-                        <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="benefits-block" id="benefits-block">
-                        <label for="benefits-block">Блок преимуществ</label>
-                      </li>
-                      <li>
-                        <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="news" id="news" checked="">
-                        <label for="news">Новости</label>
-                      </li>
-                      <li>
-                        <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="gallery" id="gallery">
-                        <label for="gallery">Галерея</label>
-                      </li>
-                      <li>
-                        <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="basket" id="basket">
-                        <label for="basket">Корзина</label>
-                      </li>
-                    </ul>
-                  </fieldset>
+              <fieldset class="fieldset-net">
+                <legend>Сетка:</legend>
+                <ul class="filter-net">
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="net-group" value="adaptive" id="filter-adaptive" checked>
+                    <label for="filter-adaptive">Адаптивная</label>
+                  </li>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="net-group" value="fixed" id="filter-fixed">
+                    <label for="filter-fixed">Фиксированная</label>
+                  </li>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="net-group" value="rubber" id="filter-rubber">
+                    <label for="filter-rubber">Резиновая</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="fieldset-features">
+                <legend>Особенности:</legend>
+                <ul class="filter-features">
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
+                    <label for="filter-slider">Слайдер</label>
+                  </li>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="advantages" id="filter-advantages">
+                    <label for="filter-advantages">Блок преимуществ</label>
+                  </li>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" id="filter-news" checked>
+                    <label for="filter-news">Новости</label>
+                  </li>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
+                    <label for="filter-gallery">Галерея</label>
+                  </li>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="cart" id="filter-cart">
+                    <label for="filter-cart">Корзина</label>
+                  </li>
+                </ul>
+              </fieldset>
                   <!-- /.filter-item -->
 
             <button type="submit" class="button button-gray button-show">Показать</button>
@@ -253,69 +252,69 @@
         <div class="map-container">
           <img class="map" src="img/map-with-marker.jpg" width="1440" height="416" alt="nёrd's на карте">
         </div>
-        <div class="contacts-container container">
-          <div class="contacts-popup">
-            <p class="contacts-title"><strong>NЁRDS DESIGN STUDIO</strong></p>
-            <p class="contacts-address">
-              191186, Санкт-Петербург,<br>
-              ул. Б. Конюшенная, д. 19/8
-            </p>
-            <p class="contacts-phone">
-              тел. +7 (812) 275-75-75
-            </p>
-            <a href="feedback.html" class="button button-red wright-us">Напишите нам</a>
+
+        <div class="container2">
+          <h2 class="visually-hidden3">Наши контакты</h2>
+          <div class="contacts-container">
+            <p class="contacts-head">Nёrds design studio</p>
+            <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
+            <p><a class="contacts-tel" href="tel:+78122757575">тел. +7 (812) 275-75-75</a></p>
+            <a class="button button-contacts" href="blank.html">Напишите нам</a>
           </div>
         </div>
       </section>
 
-     <section class="social container indent">
-        <div class="social-text">
-          <h2 class="visually-hidden">Социальные сети</h2>
-          <p class="call-to-action"><strong>Давайте дружить, это выгодно!</strong></p>
-          <p>Скидка 10% для друзей из социальных сетей.</p>
-        </div>
+<section class="social container">
+  <div class="social-text">
+    <h2 class="visually-hidden">Социальные сети</h2>
+    <p class="call-to-action"><strong>Давайте дружить, это выгодно!</strong></p>
+    <p>Скидка 10% для друзей из социальных сетей.</p>
+  </div>
+  <ul class="social-icons">
+    <li>
+      <a href="#">
+        <div class="social-icon social-icon-vk"></div>
+        <span class="visually-hidden">Вконтакте</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <div class="social-icon social-icon-fb"></div>
+        <span class="visually-hidden">Фейсбук</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <div class="social-icon social-icon-insta"></div>
+        <span class="visually-hidden">Инстаграм</span>
+      </a>
+    </li>
+  </ul>
+</section>
 
-        <ul class="social-icons">
-          <li>
-            <a href="#">
-              <div class="social-icon social-icon-vk"></div>
-              <span class="visually-hidden">Вконтакте</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <div class="social-icon social-icon-fb"></div>
-              <span class="visually-hidden">Фейсбук</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <div class="social-icon social-icon-insta"></div>
-              <span class="visually-hidden">Инстаграм</span>
-            </a>
-          </li>
-        </ul>
-      </section>
-    </footer>
 
-    <section class="feedback visually-hidden">
-      <h2>Напишите нам</h2>
-      <form name="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label for="feedback-form-name">Ваше имя:</label><br>
-          <input id="feedback-form-name" class="feedback-form-area" type="text" name="name" placeholder="Имя Фамилия">
-        </p>
-        <p>
-          <label for="feedback-form-email">Ваш email:</label><br>
-          <input id="feedback-form-email" class="feedback-form-area" type="email" name="email" placeholder="email@example.com">
-        </p>
-        <p>
-          <label for="feedback-form-message">Текст письма:</label><br>
-          <textarea id="feedback-form-message" class="feedback-form-area" name="message" rows="4" required>В свободной форме</textarea>
-        </p>
-        <button type="submit" class="button button-red wright-us">Отправить</button>
-      </form>
-    </section>
 
-  </body>
+</footer>
+<section class="modal-write-us">
+<h2>Напишите нам</h2>
+<form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+  <p class="write-us-item">
+    <label for="user-name">Ваше имя:</label>
+    <input id="user-name" type="text" name="user" placeholder="Имя Фамилия">
+  </p>
+  <p class="write-us-item">
+    <label for="user-email">Ваш email:</label>
+    <input id="user-email" type="text" name="email" placeholder="email@example.com">
+  </p>
+  <p class="write-us-item">
+    <label for="user-message">Текст письма:</label>
+    <textarea id="user-message" name="message" placeholder="В свободной форме"></textarea>
+  </p>
+  <button class="button button-write-us" type="submit">Отправить</button>
+</form>
+<button class="modal-close" type="button">Закрыть</button>
+</section>
+<script src="js/script.js"></script>
+
+</body>
 </html>
