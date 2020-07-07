@@ -7,7 +7,7 @@
   --basic-red-hover: #e74246;
   --basic-red-active: #d73738;
 
-  --basic-green: #00ca74;
+  --basic-green: #00CA74;
   --basic-green-hover: #00bc6c;
   --basic-green-active: #00aa62;
 
@@ -78,9 +78,6 @@ h1 {
   line-height: 55px;
   font-weight: medium;
   text-align: center;
-}
-
-p{
 }
 
 
@@ -195,7 +192,7 @@ img {
   text-align: right;
   background-image:url(../img/cart-icon.svg);
   background-repeat:no-repeat;
-  background-position:center left}
+  background-position:center left
 }
 
 
@@ -322,9 +319,6 @@ img {
   background-color: var(--basic-white);
 }
 
-.slider-control-active {
-
-}
 
 /* Services */
 
@@ -640,6 +634,8 @@ img {
   width: 70%;
   height: 2px;
   background: var(--basic-green);
+   width: 70%;
+   margin-left: 0;
 }
 
 .range-controls .toggle {
@@ -658,10 +654,12 @@ img {
 
 .range-controls .toggle-min {
   left: 18px;
+  left: auto;
 }
 
 .range-controls .toggle-max {
   left: 160px;
+  left: 63%;
 }
 
 .price-controls {
@@ -1108,7 +1106,7 @@ img {
 /* Main footer */
 
 .main-footer {
-  line-heigh  t: 22px;
+  line-height: 22px;
   color: var(--basic-form-value);
   background-color: var(--basic-white);
 }
@@ -1298,9 +1296,6 @@ a:active .social-icon {
 
 }
 
-#call:checked ~ .popup{
-  top: 0;
-}
 
 .feedback-form-name,
 .feedback-form-email,
@@ -1652,10 +1647,6 @@ a:active .social-icon {
 }
 
 
-.popup{
-
-}
-
 .popup-feedback {
     display: none;
     position: fixed;
@@ -1789,16 +1780,6 @@ padding-bottom: 80px;
   outline: none;
 }
 
-
-
-#callback{
-  display: none;
-}
-
-#callback:checked ~ .popup{
-  top: 50px;
-}
-
 .close{
   display: block;
   position: absolute;
@@ -1810,7 +1791,7 @@ padding-bottom: 80px;
 }
 
 
-///////////////////////////////
+
 
 
 
@@ -2213,11 +2194,6 @@ padding-bottom: 80px;
 	width: 259px;
 	margin-left: 20px;
 	padding: 16px 0;
-  background-color: r
-	border-radius:
-}
-
-.button-write-us:active,
-.button-write-us:focus {
-	outline-style: none;
+  background-color: var(--basic-red);
+	border-radius: 3px;
 }
